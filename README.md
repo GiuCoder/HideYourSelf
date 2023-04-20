@@ -10,7 +10,7 @@ git clone https://github.com/GiuCoder/HideYourSelf.git
 
 chmod +x hidemyip.sh
 
-sudo mv hidemyip.sh /usr/bin
+sudo mv hidemyip.sh /usr/bin/
 
 ```
 
