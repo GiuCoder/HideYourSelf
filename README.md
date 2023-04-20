@@ -8,6 +8,8 @@ Here's to install it:
 ``` 
 git clone https://github.com/GiuCoder/HideYourSelf.git
 
+cd HideYourSelf
+
 chmod +x hidemyip.sh
 
 sudo mv hidemyip.sh /usr/bin/
