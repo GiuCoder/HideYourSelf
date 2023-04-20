@@ -27,5 +27,5 @@ echo -e "${YELLOW}Removing HideYourSelf directory...${NC}"
 rm -rf HideYourSelf
 echo -e "${GREEN}HideYourSelf directory has been removed.${NC}"
 
-echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+echo -e "\n\n\n\n\n"
 echo -e "${GREEN}Created By GiuCoder${NC}"
