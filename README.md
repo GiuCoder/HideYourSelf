@@ -24,6 +24,13 @@ You can run it by typing commands:
 hidemyip.sh
 ```
 
+# Uninstall the program
+
+```
+chmod +x uninstall.sh
+./uninstall.sh
+```
+
 # Disclaimer
 
 The content and information provided by GiuCoder is for educational purposes only. The techniques and tools described in any of the content on this platform, including but not limited to code and tutorials, are intended to be used solely for the purpose of learning about ethical hacking and enhancing cybersecurity knowledge.
