@@ -18,15 +18,11 @@ if ! command -v hidemyip.sh &> /dev/null; then
     exit 1
 fi
 
-# Show loading animation while deleting hidemyip.sh
-echo -e "${YELLOW}Deleting hidemyip.sh...${NC}"
-spinner="/-\|"
-while sudo rm -f /usr/bin/hidemyip.sh 2>/dev/null; do
-    printf "\b${spinner:0:1}"
-    spinner=${spinner:1}${spinner:0:1}
-done
-echo -e "\n${GREEN}hidemyip.sh has been deleted successfully.${NC}"
+# Delete hidemyip.sh
+sudo rm -f /usr/bin/hidemyip.sh
+echo -e "${GREEN}hidemyip.sh has been deleted successfully.${NC}"
 
+# Remove HideYourSelf directory
 echo -e "${YELLOW}Removing HideYourSelf directory...${NC}"
 rm -rf HideYourSelf
 echo -e "${GREEN}HideYourSelf directory has been removed.${NC}"
