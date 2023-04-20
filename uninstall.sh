@@ -25,7 +25,8 @@ echo -e "${GREEN}hidemyip.sh has been deleted successfully.${NC}"
 # Remove HideYourSelf directory
 echo -e "${YELLOW}Removing HideYourSelf directory...${NC}"
 rm -rf HideYourSelf
-echo -e "${GREEN}HideYourSelf directory has been removed.${NC}"
+echo -e "${GREEN}HideYourSelf directory has been removed.${NC}
+echo "${YELLOW}To Remove All The Program Please Run:\ncd ..\nrm -r HideYourSelf"
 
 echo -e "\n\n\n\n\n"
 echo -e "${GREEN}Created By GiuCoder${NC}"
