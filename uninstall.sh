@@ -4,7 +4,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
+NC='\033[0m'
 
 # Check for root privileges
 if [[ $EUID -ne 0 ]]; then
@@ -25,12 +25,12 @@ echo -e "${GREEN}hidemyip.sh has been deleted successfully.${NC}"
 # Remove HideYourSelf directory
 echo -e "${YELLOW}Removing HideYourSelf directory...${NC}"
 rm -rf HideYourSelf
-echo -e "${GREEN}HideYourSelf directory has been removed.${NC}
-echo -e "${YELLOW}To Remove All The Program Please Run:${NC}"
-echo -e "\n"
-echo -e "${YELLOW}cd ..${NC}"
-echo -e "\n"
-echo -e "${YELLOW}rm -r HideYourSelf{NC}"
+echo -e "${GREEN}HideYourSelf directory has been removed.${NC}"
+
+# Print message for how to remove all the program
+echo -e "${YELLOW}To Remove All The Program Please Run:${NC}\n"
+echo -e "${YELLOW}cd ..${NC}\n"
+echo -e "${YELLOW}rm -rf HideYourSelf${NC}"
 
 echo -e "\n\n\n\n\n"
 echo -e "${GREEN}Created By GiuCoder${NC}"
