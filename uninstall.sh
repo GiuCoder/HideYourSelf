@@ -20,18 +20,28 @@ if ! command -v hidemyip.sh &> /dev/null; then
 fi
 
 # Delete hidemyip.sh
-sudo rm -f /usr/bin/hidemyip.sh
-echo -e "${GREEN}hidemyip.sh has been deleted successfully.${NC}\n"
+read -p "Are you sure you want to delete hidemyip.sh? [y/N] " confirm
+if [[ "$confirm" =~ ^[Yy]$ ]]; then
+    sudo rm -f /usr/bin/hidemyip.sh
+    echo -e "${GREEN}hidemyip.sh has been deleted successfully.${NC}\n"
+else
+    echo -e "${YELLOW}hidemyip.sh has not been deleted.${NC}\n"
+fi
 
 # Remove HideYourSelf directory
-echo -e "${YELLOW}Removing HideYourSelf directory...${NC}\n"
-rm -rf HideYourSelf
-echo -e "${GREEN}HideYourSelf directory has been removed.${NC}\n"
+read -p "Are you sure you want to remove the HideYourSelf directory? [y/N] " confirm
+if [[ "$confirm" =~ ^[Yy]$ ]]; then
+    echo -e "${YELLOW}Removing HideYourSelf directory...${NC}\n"
+    rm -rf HideYourSelf
+    echo -e "${GREEN}HideYourSelf directory has been removed.${NC}\n"
+else
+    echo -e "${YELLOW}HideYourSelf directory has not been removed.${NC}\n"
+fi
 
 # Print message for how to remove all the program
 echo -e "${YELLOW}To Remove All The Program Please Run:${NC}\n"
 echo -e "${YELLOW}cd ..${NC}\n"
-echo -e "${YELLOW}rm -rf HideYourSelf${NC}"
+echo -e "${YELLOW}rm -rf HideYourSelf${NC}\n"
 
-echo -e "\n\n\n\n\n"
+# Print final message
 echo -e "${GREEN}Created By GiuCoder${NC}"
